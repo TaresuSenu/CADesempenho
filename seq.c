@@ -1,10 +1,10 @@
-/* montecarloLivro.c
+/* seq.c
 Implementação sequencial simples para estimar pi por Monte Carlo.
 Utiliza a função drand48_r e inclui medição de tempo de execução.
-Compilar: gcc montecarloLivro.c -o montecarloLivro -fopenmp
+Compilar: gcc seq.c -o seq -fopenmp
 Observação: a flag -fopenmp será utilizada para aproveitar o recurso de
 cronômetro da biblioteca.
-Uso: ./montecarloLivro (o número de pontos será pedido no console)
+Uso: ./seq (o número de pontos será pedido no console)
 */
 #include <stdio.h>
 #include <stdlib.h> // Para drand48_r, drand48_data, srand48_r, geração reentrante de números aleatórios entre 0 e 1 em ponto flutuante
